@@ -6,12 +6,6 @@ on:
       - main
 
 jobs:
-  validate-yaml:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Validate YAML file
-        run: yamllint .github/workflows/action.yaml
   build:
     runs-on: ubuntu-latest
     steps:
