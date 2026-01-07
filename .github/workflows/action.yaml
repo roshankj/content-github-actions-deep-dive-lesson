@@ -2,7 +2,8 @@ name: Deploy my Lambda funtion
 
 on: 
   push:
-    - main
+    branches:
+      - main
 
 jobs:
   build:
