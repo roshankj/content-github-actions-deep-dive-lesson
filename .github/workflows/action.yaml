@@ -1,4 +1,4 @@
-name: Deploy my Lambda funtion
+name: Deploy my Lambda function
 
 on: 
   push:
@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Validate YAML file
-      run: yamllint action.yaml
+        run: yamllint action.yaml
   build:
     runs-on: ubuntu-latest
     steps:
